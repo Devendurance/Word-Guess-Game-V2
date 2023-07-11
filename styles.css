@@ -3,11 +3,13 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-  }
-  body {
+}
+
+body {
     background-color: rgb(156, 122, 235);
-  }
-  .wrapper {
+}
+
+.wrapper {
     position: absolute;
     width: 90%;
     max-width: 37em;
@@ -19,8 +21,9 @@
     left: 50%;
     text-align: center;
     border-radius: 1em;
-  }
-  .controls-container {
+}
+
+.controls-container {
     background-color:rgb(156, 122, 235);
     position: absolute;
     width: 100%;
@@ -30,8 +33,9 @@
     justify-content: center;
     flex-direction: column;
     top: 0;
-  }
-  #start {
+}
+
+#start {
     font-size: 1.2em;
     padding: 1em 3em;
     background-color: #ffffff;
@@ -39,15 +43,17 @@
     outline: none;
     border-radius: 2em;
     cursor: pointer;
-  }
-  #letter-container {
+}
+
+#letter-container {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8em 0.4em;
     justify-content: center;
     margin-top: 2em;
-  }
-  #letter-container button {
+}
+
+#letter-container button {
     background-color: #ffffff;
     border: 2px solid #7786f5;
     color: #7786f5;
@@ -57,53 +63,62 @@
     cursor: pointer;
     height: 3em;
     width: 3em;
-  }
-  #letter-container .correct {
+}
+
+#letter-container .correct {
     background-color: green;
     color: #ffffff;
     border: 2px solid green;
-  }
-  #letter-container .incorrect {
+}
+
+#letter-container .incorrect {
     background-color:red;
     color: #ffffff;
     border: 2px solid red;
-  }
-  .hint-ref {
+}
+
+.hint-ref {
     margin-bottom: 1em;
-  }
-  .hint-ref span {
+}
+
+.hint-ref span {
     font-weight: 600;
-  }
-  #chanceCount {
+}
+
+#chanceCount {
     margin: 1em 0;
     position: absolute;
     top: 0.62em;
     right: 2em;
-  }
-  #word {
+}
+
+#word {
     font-weight: 600;
     margin: 1em 0 2em 0;
-  }
-  #word span {
+}
+
+#word span {
     text-transform: uppercase;
     font-weight: 400;
-  }
-  .hide {
-    display: none;
-  }
-  #message{
-    font-weight: bold;
-  }
+}
 
-  @keyframes shake {
+.hide {
+    display: none;
+}
+
+#message{
+    font-weight: bold;
+}
+
+@keyframes shake {
     0% {transform: translateX(0);}
     10%, 90% {transform: translateX(-5px);}
     20%, 80% {transform: translateX(5px);}
     30%, 50%, 70% {transform: translateX(-5px);}
     40%, 60% {transform: translateX(5px);}
     100% {transform: translateX(0);}
-  }
+}
 
-  #result{
+#result{
     animation: shake 3s infinite;
-  }
+}
