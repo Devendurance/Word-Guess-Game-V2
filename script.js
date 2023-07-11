@@ -160,7 +160,7 @@ const init = () =>{
                     winCount += 1
                     //If winCount equals word length
                     if (winCount == charArray.length){
-                        resultText.textContent.innerHTML = "You won 🏆"
+                        resultText.innerHTML = "You won 🏆"
                         startBtn.innerText = "Restart"
                         //block all buttons
                         blocker()
