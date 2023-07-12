@@ -60,6 +60,42 @@ const wordList = [
         word: "radiant",
         hint: "it means shining brightly or beaming with joy"
     },
+    {
+        word: "football",
+        hint: "⚽"
+    },
+    {
+        word: "pizza",
+        hint: "🍕"
+    },
+    {
+        word: "basketball",
+        hint: "🏀"
+    },
+    {
+        word: "sun",
+        hint: "🌞"
+    },
+    {
+        word: "rocket",
+        hint: "🚀"
+    },
+    {
+        word: "planet",
+        hint: "🪐"
+    },
+    {
+        word: "moon",
+        hint: "🌙"
+    },
+    {
+        word: "twelve",
+        hint: "1️⃣2️⃣"
+    },
+    {
+        word: "ten",
+        hint: "1️⃣ ➕ 9️⃣"
+    },
 
 ]
 
@@ -106,7 +142,7 @@ const stopGame = () =>{
 const generateWord = () =>{
     letterContainer.classList.remove("hide")
     userInpSection.innerText = ""
-    randomWord = randomWord
+    randomWord = word
     randomHint = randomHint
     hintRef.innerHTML = `<div id="randomHint">
     <span>Hint:</span>${randomHint}</div>`
@@ -123,7 +159,7 @@ const generateWord = () =>{
 //Initialize Function 
 const init = () =>{
     winCount = 0
-    lossCount = 5
+    lossCount = 7
     randomWord = randomWord
     // word.innerText = randomWord
     randomHint = randomHint
@@ -162,6 +198,8 @@ const init = () =>{
                     if (winCount == charArray.length){
                         resultText.innerHTML = "You won 🏆"
                         startBtn.innerText = "Restart"
+                        startBtn.style.backgroundColor = 'forestgreen'
+                        startBtn.style.color = 'white'
                         //block all buttons
                         blocker()
                     }
@@ -173,8 +211,8 @@ const init = () =>{
             button.classList.add("incorrect")
             lossCount -= 1
             document.getElementById("chanceCount").innerText = `Chances left: ${lossCount}`
-            message.innerText = `incorrect letter`
-            message.style.color = "ff0000"
+            message.innerText = 'incorrect letter'
+            message.style.color = "darkred"
             if (lossCount === 0){
                 word.innerHTML = `The word was <span>${randomWord}</span>`
                 resultText.innerHTML = "Game Over 😂😝"
@@ -191,6 +229,8 @@ const init = () =>{
         letterContainer.appendChild(button);
     }
 };
+
+startBtn.addEventListener('click', init)
 
 window.onload = () => {
     init()

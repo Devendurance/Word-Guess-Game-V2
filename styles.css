@@ -9,6 +9,10 @@ body {
     background-color: rgb(156, 122, 235);
 }
 
+h1{
+    text-align: center;
+}
+
 .wrapper {
     position: absolute;
     width: 90%;
@@ -38,7 +42,7 @@ body {
 #start {
     font-size: 1.2em;
     padding: 1em 3em;
-    background-color: #ffffff;
+    background-color:rgb(97, 226, 22);
     border: none;
     outline: none;
     border-radius: 2em;
@@ -54,9 +58,9 @@ body {
 }
 
 #letter-container button {
-    background-color: #ffffff;
-    border: 2px solid #7786f5;
-    color: #7786f5;
+    background-color: #c0bcbc;
+    border: 2px solid black;
+    color: navy;
     font-weight: bold;
     outline: none;
     border-radius: 0.3em;
