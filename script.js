@@ -96,7 +96,30 @@ const wordList = [
         word: "ten",
         hint: "1️⃣ ➕ 9️⃣"
     },
-
+    {
+        word: "taxi",
+        hint: "🚕"
+    },
+    {
+        word: "traffic light",
+        hint: "🚦"
+    },
+    {
+        word: "lion",
+        hint: "🦁"
+    },
+    {
+        word: "tiger",
+        hint: "🐯"
+    },
+    {
+        word: "dolphin",
+        hint: "🐬"
+    },
+    {
+        word: "ear",
+        hint: "👂"
+    },
 ]
 
 //Initial References
@@ -142,7 +165,7 @@ const stopGame = () =>{
 const generateWord = () =>{
     letterContainer.classList.remove("hide")
     userInpSection.innerText = ""
-    randomWord = word
+    randomWord = randomWord
     randomHint = randomHint
     hintRef.innerHTML = `<div id="randomHint">
     <span>Hint:</span>${randomHint}</div>`
