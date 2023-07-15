@@ -11,6 +11,9 @@ body {
 
 h1{
     text-align: center;
+    color: blanchedalmond;
+    letter-spacing: 1rem;
+    margin-top: 1.5rem;
 }
 
 .wrapper {
@@ -18,7 +21,7 @@ h1{
     width: 90%;
     max-width: 37em;
     background-color: rgb(101, 51, 136);
-    padding: 7em 3em;
+    padding: 5em 3em;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -83,10 +86,12 @@ h1{
 
 .hint-ref {
     margin-bottom: 1em;
+    color: white;
 }
 
 .hint-ref span {
     font-weight: 600;
+    color: white;
 }
 
 #chanceCount {
@@ -94,16 +99,19 @@ h1{
     position: absolute;
     top: 0.62em;
     right: 2em;
+    color: white;
 }
 
 #word {
     font-weight: 600;
+    color: white;
     margin: 1em 0 2em 0;
 }
 
 #word span {
     text-transform: uppercase;
     font-weight: 400;
+    color: white
 }
 
 .hide {
@@ -125,4 +133,77 @@ h1{
 
 #result{
     animation: shake 3s infinite;
+}
+
+.score{
+    animation: shake 3s infinite;
+}
+
+@media screen and (max-width:412px){
+    body{
+        background-color: black
+    }
+    h1{
+        letter-spacing: 0;
+        margin-top: 50px
+        
+    }
+    .wrapper{
+        margin-top: 20px;
+        width: 85%;
+        padding: 2.5rem;
+    }
+    #chanceCount {
+    margin: 1em 0;
+    position: absolute;
+    top: -0.5rem;
+    right: 2em;
+    color: white;
+}
+}
+
+@media screen and (max-width:384px){
+    body{
+        background-color: black
+    }
+    h1{
+        letter-spacing: 0;
+        margin-top: 50px
+        
+    }
+    .wrapper{
+        margin-top: 20px;
+        width: 85%;
+        padding: 2.5rem;
+    }
+    #chanceCount {
+    margin: 1em 0;
+    position: absolute;
+    top: -0.5rem;
+    right: 2em;
+    color: white;
+}
+}
+
+@media screen and (max-width:360px){
+    body{
+        background-color: black
+    }
+    h1{
+        letter-spacing: 0;
+        margin-top: 50px
+        
+    }
+    .wrapper{
+        margin-top: 20px;
+        width: 85%;
+        padding: 2.5rem;
+    }
+    #chanceCount {
+    margin: 1em 0;
+    position: absolute;
+    top: -0.5rem;
+    right: 2em;
+    color: white;
+}
 }
